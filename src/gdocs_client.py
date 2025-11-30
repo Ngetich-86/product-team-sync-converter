@@ -1,10 +1,7 @@
 """
 Google Docs API client for creating and formatting documents.
 """
-try:
-    from google.colab import auth
-except ImportError:
-    auth = None
+from google.colab import auth
 from googleapiclient.discovery import build
 from googleapiclient.errors import HttpError
 
